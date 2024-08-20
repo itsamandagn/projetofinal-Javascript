@@ -1,11 +1,21 @@
 const cliente = {};
 const cadastrarCliente = () => {
   cliente.nome = prompt("Digite seu nome");
-  cliente.endereco = prompt("Digite seu endereço");
-  cliente.email = prompt("Digite seu email");
+  cliente.endereco = prompt("Digite seu endereço:rua, número e bairro");
+  cliente.cidade = prompt("Digite sua cidade");
+  cliente.estado = prompt("Digite seu estado"); 
+  let emailValido = false;
+  while (!emailValido) {
+    cliente.email = prompt("Digite um email válido");
+    if (cliente.email.includes("@")) {
+      emailValido = true;
+    } else {
+      alert("Email inválido!");
+    }
+  }
 
   console.log("Nome:" + cliente.nome);
-  console.log("Endereço:" + cliente.endereco);
+  console.log(`Endereço: ${cliente.endereco}  ${cliente.cidade}  ${cliente.estado}`);
   console.log("E-mail:" + cliente.email);
 };
 
