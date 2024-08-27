@@ -16,27 +16,27 @@
     <form id="form">
       <div class="nome">
         <label for="inputName" class="form-label">Nome</label>
-        <input type="name" class="form-control" id="inputName">
+        <input type="name" class="form-control" id="nome" required aria-label="nome">
       </div>
       <div class="email">
         <label for="inputEmail" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail">
+        <input type="email" class="form-control" id="email"required aria-label="email">
       </div>
         <div class="endereco">
           <label for="inputAddress" class="form-label">Endereço</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Rua, Av...">
+          <input type="text" class="form-control" id="endereco" placeholder="Rua, Av..."required aria-label="endereco">
         </div>
         <div class="complemento-endereco">
           <label for="inputComplement" class="form-label">Complemento</label>
-          <input type="text" class="form-control" id="inputComplement" placeholder="Casa, Apto...">
+          <input type="text" class="form-control" id="complemento" placeholder="Casa, Apto...">
         </div>
         <div class="cidade">
           <label for="inputCity" class="form-label">Cidade</label>
-          <input type="text" class="form-control" id="inputCity">
+          <input type="text" class="form-control" id="cidade"required aria-label="cidade">
         </div>
         <div class="estado">
           <label for="inputState" class="form-label">UF</label>
-          <select id="inputState" class="form-select">
+          <select id="estado" required aria-label="estado" class="form-select">
             <option selected>MG</option>
             <option>AC</option>
             <option>AL</option>
@@ -68,13 +68,10 @@
         </div>
         <div class="cep">
           <label for="inputZip" class="form-label">CEP</label>
-          <input type="text" class="form-control" id="inputZip">
+          <input type="text" class="form-control" id="cep"required aria-label="cep">
         </div>
         </div>
-        <div class="cadastro">
-          <button type="submit" class="btn btn-primary">Cadastrar</button>
-        </div>
+        <div class="cadastro"> <button type="button" class="btn btn-primary" onclick="cadastrarCliente()">Cadastrar</button> </div> </form> <script src="cadastro.js"></script>
       </form>
-      <script src="cadastro.js"></script>
 </body>
 </html>
