@@ -20,10 +20,10 @@ const cadastrarCliente = () => {
     cep: cep,
   };
 
-  console.log(cliente.nome);
+  console.log("Nome:" + cliente.nome);
   console.log(
-    `${cliente.endereco}, ${cliente.complemento}, ${cliente.cidade} - ${cliente.estado}`
+    `endereço: ${cliente.endereco}, ${cliente.complemento}, cidade: ${cliente.cidade} - estado: ${cliente.estado}`
   );
-  console.log(cliente.email);
-  console.log(cliente.cep);
+  console.log("E-mail:" + cliente.email);
+  console.log("Cep:" + cliente.cep);
 }
