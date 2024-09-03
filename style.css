@@ -75,3 +75,62 @@ a:hover{
     width: 200px;
 }
 
+.footer {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+.footer div {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.blinking-banner {
+    position: fixed; /* Fixa a faixa na tela */
+    top: 0; /* Alinha a faixa ao topo da página */
+    left: 0; /* Inicia a faixa no canto esquerdo */
+    width: 100%; /* Ocupa toda a largura da tela */
+    background-color: black; /* Cor de fundo preta */
+    padding: 10px 0; /* Espaçamento vertical dentro da faixa */
+    text-align: center; /* Centraliza o texto dentro da faixa */
+    z-index: 1000; /* Garante que a faixa fique sobre outros elementos */
+}
+
+.blinking-message {
+    font-size: 20px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    animation: blinking 1s infinite; /* Define a animação de piscar */
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
