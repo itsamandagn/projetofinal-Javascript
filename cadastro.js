@@ -25,4 +25,4 @@ const cadastrarCliente = () => {
   console.log(`endereço: ${cliente.endereco}, ${cliente.complemento}`);
   console.log(`cidade: ${cliente.cidade}, estado: ${cliente.estado}`);
   console.log(`Cep: ${cliente.cep}`);
-}
+};

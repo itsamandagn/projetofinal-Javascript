@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="header">
+        <li class="header_item"><a href="index.html">Voltar</a></li>
+        <img class="logo" src="./imagensprojetojs/logoJS.jpg" alt="" />
+      </ul>
+    </nav>
+    <main>
+      <div class="login-box">
+        <h2>Entrar</h2>
+        <form id="login-form">
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+            <label for="email">E-mail</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Digite sua senha"
+              required
+            />
+            <label for="password">Senha</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Log In</button>
+          <div class="register-link">
+            <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+          </div>
+          <div class="social-login">
+            <p>Ou entre com:</p>
+            <div class="icons">
+              <a href="#"
+                ><img
+                  src="https://img.icons8.com/ios/50/000000/google-logo.png"
+                  alt="Google"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://img.icons8.com/ios/50/000000/email.png"
+                  alt="Email"
+              /></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div>
+        <h4>Fale Conosco</h4>
+        <p>SAC: WhatsApp: (00) 0000-0000</p>
+        <p>Horários de Atendimento</p>
+        <p>Seg a Sex. das 09 às 18h</p>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      JS Store - Todos os direitos reservados - JS Store. SAC (00) 0000-0000
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

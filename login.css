@@ -1,14 +1,5 @@
-.alert {
-  display: flex;
-  flex-direction: row;
-  font-size: 20px;
-  background-color: black;
-  color: white;
-  padding: 10px;
-}
-
-.alert-info {
-  justify-content: center;
+* {
+  margin: 0;
 }
 
 .header {
@@ -30,6 +21,10 @@
   border-radius: 100px;
 }
 
+a:hover {
+  color: white;
+}
+
 .logo {
   position: absolute;
   top: 60px;
@@ -40,62 +35,75 @@
 }
 
 a {
+  text-decoration: none;
   color: black;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-floating {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-link p {
+  margin: 0;
+}
+
+.register-link a {
+  color: #007bff;
   text-decoration: none;
 }
 
-a:hover {
-  color: white;
+.register-link a:hover {
+  text-decoration: underline;
 }
 
-.imagens {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  margin: 10px;
-  height: 100vh;
-  width: 300px;
-  margin-top: 100px;
+.social-login {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.imagens img {
-  height: 500px;
-  width: 400px;
-}
-
-.col-md {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 10px;
-  width: 200px;
-}
-
-form {
-  display: inline-flex;
-  flex-direction: row;
-  position: relative;
-  width: 20px;
-  height: 40px;
-}
-
-button {
-  color: black;
-  background-color: white;
-  border-color: black;
-  border-color: black;
-}
-
-button:hover {
-    color: red;
-}
-
-.fechar-pedido {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  margin-left: 20px;
+.social-login p {
   margin-bottom: 10px;
-  margin-top: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icons a {
+  display: inline-block;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
 }
 
 .footer {
