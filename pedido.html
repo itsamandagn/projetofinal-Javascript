@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="pedido.css" />
     <title>Pedido</title>
   </head>
@@ -10,28 +16,65 @@
     <nav>
       <ul class="header">
         <li class="header_item"><a href="index.html">Voltar</a></li>
-        <img class="logo" src="./imagensprojetojs/logoJS.jpg" alt="" />
+        <img
+          class="logo"
+          src="./imagensprojetojs/logoJS.jpg"
+          alt="logo loja JS"
+        />
       </ul>
     </nav>
+    <div class="info-carrinho">
+      <div class="icon-carrinho">
+        <img src="./imagensprojetojs/carrinho.png" alt="carrinho de compras" />
+      </div>
+      <table>
+        <tr>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Valor Unitário</th>
+          <th>Frete</th>
+          <th>Valor Total</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="pagamento">
+    <h2>Pagamento</h2>
+      <input
+        type="radio"
+        id="pix"
+        name="forma_pagamento"
+        value="pix"
+        required
+      />
+      <label for="pix">PIX</label><br />
 
-    <div class="info-carrinho"></div>
-    <img class="icon-carrinho" src="./imagensprojetojs/carrinho.png" alt="" />
-    <table class="info-carrinho">
-      <tr>
-        <th>Produto</th>
-        <th>Quantidade</th>
-        <th>Valor Unitário</th>
-        <th>Frete</th>
-        <th>Valor Total</th>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
+      <input
+        type="radio"
+        id="boleto"
+        name="forma_pagamento"
+        value="boleto"
+        required
+      />
+      <label for="boleto">Boleto Bancário</label><br />
+
+      <input
+        type="radio"
+        id="cartao"
+        name="forma_pagamento"
+        value="cartao"
+        required
+      />
+      <label for="cartao">Cartão de Crédito</label><br /><br />
+      <input type="submit" value="Pagar" />
+    </div>
+
     <footer class="footer">
       <div>
         <h4>Fale Conosco</h4>
