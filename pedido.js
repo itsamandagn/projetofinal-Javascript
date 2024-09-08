@@ -1,4 +1,4 @@
-document.getElementById("fechar-pedido") .addEventListener("click", function () {
+document.getElementById("fechar-pedido").addEventListener("click", function () {
       const produto = document.getElementById("produtos").value;
       const tamanho = document.getElementById("tamanhos").value;
       const quantidade = parseInt(document.getElementById("quantidade").value);
@@ -24,7 +24,7 @@ document.getElementById("fechar-pedido") .addEventListener("click", function () 
       const frete = 10.0;
       const valorTotal = valorUnitario * quantidade + frete;
 
-      const tabela = document.querySelector(".info-carrinho tbody");
+      const tabela = document.querySelector("info-carrinho tbody");
       const novaTabela = tabela.insertRow();
 
       novaTabela.innerHTML = `

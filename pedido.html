@@ -27,59 +27,61 @@
       <div class="icon-carrinho">
         <img src="./imagensprojetojs/carrinho.png" alt="carrinho de compras" />
       </div>
-    <div class="info-carrinho">
-      <table>
-        <thead>
-          <tr>
-            <th>Produto</th>
-            <th>Quantidade</th>
-            <th>Valor Unitário</th>
-            <th>Frete</th>
-            <th>Valor Total</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="pagamento">
-    <h2>Pagamento</h2>
-      <input
-        type="radio"
-        id="pix"
-        name="forma_pagamento"
-        value="pix"
-        required
-      />
-      <label for="pix">PIX</label><br />
+      <div class="info-carrinho">
+        <table>
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Quantidade</th>
+              <th>Valor Unitário</th>
+              <th>Frete</th>
+              <th>Valor Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagamento">
+        <h2>Pagamento</h2>
+        <input
+          type="radio"
+          id="pix"
+          name="forma_pagamento"
+          value="pix"
+          required
+        />
+        <label for="pix">PIX</label><br />
 
-      <input
-        type="radio"
-        id="boleto"
-        name="forma_pagamento"
-        value="boleto"
-        required
-      />
-      <label for="boleto">Boleto Bancário</label><br />
+        <input
+          type="radio"
+          id="boleto"
+          name="forma_pagamento"
+          value="boleto"
+          required
+        />
+        <label for="boleto">Boleto Bancário</label><br />
 
-      <input
-        type="radio"
-        id="cartao"
-        name="forma_pagamento"
-        value="cartao"
-        required
-      />
-      <label for="cartao">Cartão de Crédito</label><br /><br />
-      <input type="submit" value="Pagar" />
-    </div>
-  </main>
+        <input
+          type="radio"
+          id="cartao"
+          name="forma_pagamento"
+          value="cartao"
+          required
+        />
+        <label for="cartao">Cartão de Crédito</label><br /><br />
+        <button type="button" class="btn btn-primary" id="pagamento">
+          PAGAR
+        </button>
+      </div>
+    </main>
 
     <footer class="footer">
       <div>
