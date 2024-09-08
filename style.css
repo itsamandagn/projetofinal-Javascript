@@ -82,7 +82,7 @@ a:hover {
 border-color: #000;
 }
 
-.quantidade {
+.quantidade-pedido {
   display: inline-flex;
   flex-direction: row;
   position: relative;
@@ -102,7 +102,7 @@ button:hover {
     color: red;
 }
 
-.fechar-pedido {
+.adicionar-pedido {
   display: flex;
   flex-direction: row;
   position: relative;
