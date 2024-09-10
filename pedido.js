@@ -25,18 +25,13 @@ document.getElementById("fechar-pedido").addEventListener("click", function () {
   const valorTotal = valorUnitario * quantidade + frete;
 
   const tabela = document.querySelector(".info-carrinho tbody");
+    const novaLinha = tabela.insertRow();
 
-  const novaLinha = tabela.insertRow();
-
-  const produtoCelula = novaLinha.insertCell(0);
-  const quantidadeCelula = novaLinha.insertCell(1);
-  const valorUnitarioCelula = novaLinha.insertCell(2);
-  const freteCelula = novaLinha.insertCell(3);
-  const valorTotalCelula = novaLinha.insertCell(4);
-
-  produtoCelula.textContent = `${produto} - Tamanho: ${tamanho}`;
-  quantidadeCelula.textContent = quantidade;
-  valorUnitarioCelula.textContent = `R$ ${valorUnitario.toFixed(2)}`;
-  freteCelula.textContent = `R$ ${frete.toFixed(2)}`;
-  valorTotalCelula.textContent = `R$ ${valorTotal.toFixed(2)}`;
-});
+    novaLinha.innerHTML = `
+            <td>${produto} - Tamanho: ${tamanho}</td>
+            <td>${quantidade}</td>
+            <td>R$ ${valorUnitario.toFixed(2)}</td>
+            <td>R$ ${frete.toFixed(2)}</td>
+            <td>R$ ${valorTotal.toFixed(2)}</td>
+    `;
+  });
