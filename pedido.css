@@ -67,15 +67,16 @@ a {
 }
 
 th {
-  border: 1px solid black;
-  padding: 20px;
   font-size: 18px;
+  border: 1px solid black;
+  padding: 50px;
 }
 
 td {
-  border: 1px solid black;
-  padding: 50px;
   font-size: 18px;
+  border: 1px solid black;
+  padding: 30px;
+  
 }
 
 .pagamento {
