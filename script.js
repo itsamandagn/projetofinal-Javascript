@@ -24,7 +24,7 @@ document.getElementById("fechar-pedido").addEventListener("click", function () {
     const frete = 10.0;
     const valorTotal = valorUnitario * quantidade + frete;
   
-    const carrinhoIten = {
+    const carrinhoItem = {
       produto,
       tamanho,
       quantidade,
@@ -34,7 +34,7 @@ document.getElementById("fechar-pedido").addEventListener("click", function () {
     };
   
     let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    carrinho.push(carrinhoIten);
+    carrinho.push(carrinhoItem);
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
   
     alert("Produto adicionado ao carrinho!");

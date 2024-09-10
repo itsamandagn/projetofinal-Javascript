@@ -12,4 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
       <td>R$ ${item.valorTotal.toFixed(2)}</td>
     `;
   });
+
+
+  document.getElementById("limpar-carrinho").addEventListener("click", function () {
+    localStorage.removeItem('carrinho'); 
+    tabela.innerHTML = ""; 
+    alert("Carrinho limpo!");
+  });
+
 });

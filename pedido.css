@@ -80,12 +80,7 @@ td {
 }
 
 .pagamento {
-  margin: 20px;
-}
-
-#pagamento {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   justify-content: space-around;
   margin: 10px;
   color: black;
@@ -93,8 +88,16 @@ td {
   border-color: black;
 }
 
-#pagamento:hover {
+#limpar-carrinho {
+  display: inline-block;
+  justify-content: end;
+  
+}
+
+
+.pagamento:hover {
   color: red;
+  background-color: white;
 }
 
 /* Estilos do rodapé */
