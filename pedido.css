@@ -110,34 +110,48 @@ td {
 }
 
 
+/* Estilos do rodapé */
 .footer {
-  background-color: #000;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8; /* Distância entre os itens */
+}
+
+.footer-info li {
   font-size: 14px;
 }
 
-.footer div {
-  flex: 1;
-  margin-right: 20px;
-  text-align: center;
-  color: white;
-}
-
-.footer h4 {
-  margin-bottom: 10px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
 .footer-bottom {
+  background-color: #f1f1f1;
+  padding: 10px 0;
   text-align: center;
-  margin-top: 20px;
-  border-top: 1px solid #333;
-  padding-top: 10px;
   font-size: 12px;
+  color: #333;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Para manter o layout responsivo */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .blinking-banner {
@@ -169,3 +183,7 @@ td {
     opacity: 1;
   }
 }
+
+/* .footer p {
+  margin-bottom: 28px;
+} */
