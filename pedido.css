@@ -110,10 +110,9 @@ td {
 }
 
 
-/* Estilos do rodapé */
 .footer {
-  background-color: #000; /* Fundo preto */
-  color: #fff; /* Texto branco */
+  background-color: #000; 
+  color: #fff;
   padding: 20px 0;
   text-align: center;
 }
@@ -128,7 +127,7 @@ td {
   list-style: none;
   padding: 0;
   margin: 0;
-  line-height: 1.8; /* Distância entre os itens */
+  line-height: 1.8; 
 }
 
 .footer-info li {
@@ -147,7 +146,6 @@ td {
   margin: 0;
 }
 
-/* Para manter o layout responsivo */
 .container {
   width: 90%;
   max-width: 1200px;
