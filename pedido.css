@@ -69,18 +69,22 @@ a {
 th {
   font-size: 18px;
   border: 1px solid black;
-  padding: 50px;
+  width: 200px;
+
 }
 
 td {
   font-size: 18px;
   border: 1px solid black;
-  padding: 30px;
+  width: 200px;
+  justify-items: center;
+  
   
 }
 
-.pagamento {
-  display: inline-block;
+#pagamento {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   margin: 10px;
   color: black;
@@ -88,17 +92,23 @@ td {
   border-color: black;
 }
 
-#limpar-carrinho {
-  display: inline-block;
-  justify-content: end;
-  
-}
-
-
-.pagamento:hover {
+#pagamento:hover {
   color: red;
-  background-color: white;
 }
+
+#limpar-carrinho {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+  background-color: white;
+  height: 40px;
+  width: 70px;
+}
+
+#limpar-carrinho:hover {
+  color: red;
+}
+
 
 .footer {
   background-color: #000;
