@@ -20,4 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Carrinho limpo!");
   });
 
+  document.getElementById("pagamento").addEventListener("click", function () {
+    alert("Pagamento concluído");
+  });
+
 });
