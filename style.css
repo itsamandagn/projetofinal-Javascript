@@ -13,35 +13,40 @@
 .alert-info {
   justify-content: center;
 }
-
 .header {
-  list-style: none;
-  list-style-type: none;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
 }
 
-.header_item {
+.header_menu {
   display: inline-block;
-  position: relative;
-  top: 50px;
-  left: 1100px;
+  list-style: none;
+  gap: 20px;
   padding: 10px;
 }
 
-.header_item:hover {
+.header_menu:hover {
   background-color: black;
   border-radius: 100px;
-  
 }
 
 .logo {
-  position: absolute;
-  top: 60px;
-  right: 1120px;
-  margin-left: 200px;
   width: 250px;
-  display: inline-block;
 }
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: white;
+}
+
 
 a {
   color: black;
@@ -54,13 +59,16 @@ a:hover {
 
 .imagens-produtos {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 60px;
-  gap: 30px;
-  width: 100vh;
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+  align-items: center; /* Centraliza as imagens verticalmente */
+  gap: 30px; /* Espaçamento entre as imagens */
   height: 100vh;
-  margin-top: 100px;
+}
+
+.imagens-produtos div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o texto e as imagens */
 }
 
 .imagens-produtos img {

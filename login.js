@@ -21,6 +21,5 @@ if (userDataString) {
 
 const voltarLink = document.querySelector('.header_item a');
 voltarLink.addEventListener('click', () => {
-  // Redirect the user to the previous page
   window.location.href = "index.html";
 });
