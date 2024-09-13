@@ -7,7 +7,11 @@ function cadastrarCliente() {
   const estado = document.getElementById("estado").value;
   const cep = document.getElementById("cep").value;
 
-  // Criar um objeto com os dados
+  if (!email.includes("@")) {
+    alert("Email inválido!");
+    return;
+  }
+
   const cliente = {
     nome: nome,
     email: email,
@@ -30,13 +34,11 @@ function exibirCliente() {
 
   if (clienteSalvo) {
     const cliente = JSON.parse(clienteSalvo);
-    
-    // Exibir os dados no console ou em algum elemento HTML
+
     console.log("Cliente cadastrado:", cliente);
   }
 }
 
-// Exemplo de como chamar a função para exibir o cliente quando a página carregar
-window.onload = function() {
+window.onload = function () {
   exibirCliente();
 };
