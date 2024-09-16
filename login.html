@@ -3,19 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="login.css" />
     <title>Login</title>
   </head>
   <body>
-    <nav>
-      <ul class="header">
-        <li class="header_item"><a href="index.html">Voltar</a></li>
-        <img class="logo" src="./imagensprojetojs/logoJS.jpg" alt="logo loja JS" />
-      </ul>
-    </nav>
+    <body>
+      <div class="blinking-banner">
+        <div class="blinking-message">
+          APROVEITE O CUPOM DE PRIMEIRA COMPRA: BEMVINDO
+        </div>
+    </div>
+    <header>
+      <nav class="header">
+        <img
+          class="logo"
+          src="./imagensprojetojs/logoJS.jpg"
+          alt="logo loja JS"
+        />
+        <ul>
+          <li class="header_menu"><a href="index.html">Início</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <div class="login-box">
         <h2>Entrar</h2>
@@ -63,15 +78,21 @@
       </div>
     </main>
     <footer class="footer">
-      <div>
-        <h4>Fale Conosco</h4>
-        <p>SAC: WhatsApp: (00) 0000-0000</p>
-        <p>Horários de Atendimento</p>
-        <p>Seg a Sex. das 09 às 18h</p>
+      <div class="container">
+        <div class="footer-content">
+          <h4 class="footer-title">Fale Conosco</h4>
+          <ul class="footer-info">
+            <li>SAC: WhatsApp: (00) 0000-0000</li>
+            <li>Horários de Atendimento</li>
+            <li>Seg a Sex. das 09 às 18h</li>
+          </ul>
+        </div>
       </div>
     </footer>
     <div class="footer-bottom">
-      JS Store - Todos os direitos reservados - JS Store. SAC (00) 0000-0000
+      <div class="container">
+        <p>JS Store - Todos os direitos reservados - JS Store. SAC (00) 0000-0000</p>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

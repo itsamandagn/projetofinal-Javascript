@@ -3,10 +3,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  height: 100vh;
-}
-
 .header {
   background-color: #ffffff;
   padding: 10px 20px;
@@ -36,14 +32,15 @@ body {
 #form {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   width: 50%;
   gap: 10px;
 }
 
-/* Estilos do rodapé */
+
 .footer {
-  background-color: #000; /* Fundo preto */
-  color: #fff; /* Texto branco */
+  background-color: #000;
+  color: #fff; 
   padding: 20px 0;
   text-align: center;
 }
@@ -58,7 +55,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  line-height: 1.8; /* Distância entre os itens */
+  line-height: 1.8;
 }
 
 .footer-info li {
@@ -77,11 +74,40 @@ body {
   margin: 0;
 }
 
-/* Para manter o layout responsivo */
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+.blinking-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.blinking-message {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
