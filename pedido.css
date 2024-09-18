@@ -1,4 +1,4 @@
-* {
+/* * {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
@@ -207,4 +207,181 @@ margin: 20px;
     font-size: 14px;
     width: 100%;
   }
+} */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Banner piscante */
+.blinking-banner {
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+  animation: blinking 1s infinite;
+}
+
+.blinking-message {
+  font-weight: 700;
+  color: white;
+}
+
+@keyframes blinking {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: black;
+}
+
+.header img {
+  height: 50px;
+}
+
+.header ul {
+  list-style: none;
+}
+
+.header_menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+
+.header_menu a:hover {
+  text-decoration: underline;
+}
+
+
+.icon-carrinho img {
+  display: block;
+  margin: 2rem auto;
+  width: 100px;
+}
+
+.btn {
+  display: block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.btn-danger {
+  background-color: black;
+  color: white;
+  border: none;
+  
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: black;
+}
+
+
+.info-carrinho {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-carrinho th,
+.info-carrinho td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-carrinho th {
+  background-color: black;
+  color: white;
+}
+
+.info-carrinho td {
+  background-color: #f9f9f9;
+}
+
+
+.pagamento {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.pagamento h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.pagamento input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.pagamento label {
+  margin-right: 1.5rem;
+  font-size: 1rem;
+}
+
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-info {
+  list-style: none;
+}
+
+.footer-info li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-bottom p {
+  margin: 0;
 }
