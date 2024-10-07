@@ -150,8 +150,9 @@ button:hover {
 }
 
 .footer {
-  background-color: #f8f9fa;
+  background-color: black;
   padding: 2rem 0;
+  color: white;
 }
 
 .footer-content {
@@ -172,12 +173,9 @@ button:hover {
 }
 
 .footer-bottom {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
   padding: 1rem 0;
-}
-
-.footer-bottom p {
-  margin: 0;
+  font-size: 15px;
 }

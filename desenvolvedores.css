@@ -39,36 +39,53 @@ body {
 
 h2 {
   padding: 20px;
-}
-
-.foto {
-  width: 200px;
-  height: 300px;
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: auto;
+  padding: 2rem;
+  background-color: #ffffff;
 }
 
 .desenvolvedores {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
-  margin: 10px;
-  gap: 10px;
+  align-items: center;
+  gap: 40px;
+}
+
+.desenvolvedores div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+p {
+  max-width: 600px;
+  text-align: justify;
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: auto;
 }
 
 .footer {
-  background-color: #f8f9fa;
+  background-color: black;
   padding: 2rem 0;
+  color: white;
 }
 
 .footer-content {
@@ -89,12 +106,19 @@ main {
 }
 
 .footer-bottom {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
   padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
 }
 
-.footer-bottom p {
-  margin: 0;
+@media (max-width: 768px) {
+  .desenvolvedores div {
+    flex-direction: column;
+    text-align: center;
+  }
 }
